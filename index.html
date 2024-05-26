@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADAM SORRY :)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .image-center, .text-center, .button-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      width: 100%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .iyaa {
+      background-color: hsl(128, 81%, 53%);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .iyaa:hover {
+      background-color: #26e840;
+    }
+    .tricky {
+      position: absolute;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-center">
+    <img src="https://c.tenor.com/VxixtsQjIRAAAAAj/chibi-cat-mochi-cat.gif" alt="Chibi Cat Mochi" id="image-alt">
+  </div>
+  <div class="text-center">
+    <h1 id="text">I Am Sorry Madam.......!</h1>
+  </div>
+  <div class="button-center">
+    <button type="button" class="iyaa">IT'S OK...</button>
+  </div>
+  <div class="tricky" id="tricky-button">
+    <button type="button" class="gamau">NO</button>
+  </div>
+  <script>
+    const iyaa = document.querySelector(".iyaa");
+    const trickyButton = document.getElementById("tricky-button");
+    iyaa.addEventListener("click", function() {
+      document.getElementById("image-alt").src = "https://c.tenor.com/lqtU1G4aaqIAAAAj/yom-dance.gif";
+      document.getElementById("text").innerHTML = "Achi Bachi 🙆 &hearts; &hearts; &hearts; &hearts;";
+    });
+    trickyButton.addEventListener("mouseover", function () {
+      trickyButton.style.left = Math.random() * 90 + "%";
+      trickyButton.style.top = Math.random() * 90 + "%";
+    });
+  </script>
+</body>
+</html>
